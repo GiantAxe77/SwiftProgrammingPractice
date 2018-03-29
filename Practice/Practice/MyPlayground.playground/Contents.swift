@@ -56,7 +56,7 @@ let informGreeting = "Hi,\(nickName ?? fullName)"
 let vegetable = "red pepper"
 switch vegetable {
 case "celery":
-    print("add some");
+    print("add some")
 case let x where x.hasSuffix("pepper"):
     print("is \(x)")
 default:
@@ -180,5 +180,51 @@ func returnFifteen() -> Int {
     return y
 }
 returnFifteen()
+
+
+func makeIncrementer() -> ((Int)->Int) {
+    func addOne(number:Int) -> Int {
+        return 1 + number
+    }
+    return addOne
+}
+var increment = makeIncrementer()
+increment(7)
+
+
+func hasAnyMatches(list:[Int], condition:(Int)->Bool) -> Bool {
+    for item in list {
+        if condition(item) {
+            return true
+        }
+    }
+    return false
+}
+func lessThanTen(number:Int) -> Bool {
+    return number < 10
+}
+var numbers = [20,3,12]
+let boolFlag = hasAnyMatches(list: numbers, condition: lessThanTen)
+print(boolFlag)
+
+// map 数组的系统方法
+numbers.map({
+    (number:Int) -> Int in
+    let result = 3 * number
+    return result
+})
+
+let mappedNumbers = numbers.map({num in 3 * num})
+print(mappedNumbers)
+
+var sortedNumbers = numbers.sort{ $0 > $1 }
+print(sortedNumbers)
+
+
+
+
+
+
+
 
 
