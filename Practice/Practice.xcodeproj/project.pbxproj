@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E72EFE5C206DCBC200A34EDA /* EnumAndStruct.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EnumAndStruct.playground; sourceTree = "<group>"; };
 		E7300870206CC59400D3E322 /* Class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Class.playground; sourceTree = "<group>"; };
 		E771C424206C9B5600EA35DA /* Practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Practice; sourceTree = BUILT_PRODUCTS_DIR; };
 		E771C427206C9B5600EA35DA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 				E771C427206C9B5600EA35DA /* main.swift */,
 				E771C42E206C9B7300EA35DA /* MyPlayground.playground */,
 				E7300870206CC59400D3E322 /* Class.playground */,
+				E72EFE5C206DCBC200A34EDA /* EnumAndStruct.playground */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
