@@ -205,3 +205,28 @@ fridgeContains("banana")
 print(fridgeIsOpen)
 
 
+
+func repeatItem<Item> (repeating item: Item, numberOfTimes: Int) -> [Item] {
+    var result = [Item]()
+    for _ in 0..<numberOfTimes {
+        result.append(item)
+    }
+    return result
+}
+repeatItem(repeating: "knock", numberOfTimes: 4)
+
+
+enum OptionalValue <Wrapped> {
+    case None
+    case Some(Wrapped)
+    
+}
+var possibleInteger: OptionalValue<Int> = .None
+possibleInteger = .Some(100)
+
+
+// 泛型未练习
+//func anyCommonElements<T: Sequence, U:Sequence>(_ lhs: T, _ rhs:U) -> Bool {
+//    where T.iterator.
+//}
+
