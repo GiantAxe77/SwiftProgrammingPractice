@@ -160,10 +160,48 @@ enum PrinterError : Error {
 
 func send(job:Int, toPrinter printerName:String) throws -> String {
     if printerName == "Never Has Toner" {
-        throw PrinterError.NoToner
+        throw PrinterError.OnFire
     }
     return "Job sent"
 }
 
+do {
+    let printerResponse = try send(job: 1040, toPrinter: "BI")
+    print(printerResponse)
+} catch {
+    print(error)
+}
+
+
+do {
+    let printerResponse = try send(job: 1440, toPrinter: "Never Has Toner")
+    print(printerResponse)
+} catch PrinterError.OnFire {
+    print("I will just put this over here, with the rest of fire")
+} catch let printerError as PrinterError {
+    print("Printer error: \(printerError).")
+} catch {
+    print(error)
+}
+
+
+let printerSuccess = try? send(job: 1884, toPrinter: "success")
+let printerFailure = try? send(job: 1998, toPrinter: "Never Has Toner")
+
+
+
+var fridgeIsOpen = false
+let fridgeContent = ["milk", "eggs", "leftovers"]
+func fridgeContains(_ food: String) -> Bool {
+    fridgeIsOpen = true
+    defer {
+        fridgeIsOpen = false
+    }
+    
+    let result = fridgeContent.contains(food)
+    return result
+}
+fridgeContains("banana")
+print(fridgeIsOpen)
 
 
