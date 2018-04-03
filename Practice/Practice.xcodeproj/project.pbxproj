@@ -29,6 +29,7 @@
 		E771C427206C9B5600EA35DA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E771C42E206C9B7300EA35DA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		E7749844207235D9005BB674 /* BasicPart.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BasicPart.playground; sourceTree = "<group>"; };
+		E7758A972073634700CA6958 /* LeetCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LeetCode.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				E771C427206C9B5600EA35DA /* main.swift */,
+				E7758A972073634700CA6958 /* LeetCode.playground */,
 				E771C42E206C9B7300EA35DA /* MyPlayground.playground */,
 				E7300870206CC59400D3E322 /* Class.playground */,
 				E72EFE5C206DCBC200A34EDA /* EnumAndStruct.playground */,
