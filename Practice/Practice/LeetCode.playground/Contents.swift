@@ -112,24 +112,34 @@ class Solution {
     
     
     // leetcode 9
-//    func isPalindrome(_ x: Int) -> Bool {
-//        if x < 0 {
-//            return false
+    func isPalindrome(_ x: Int) -> Bool {
+        if x < 0 {
+            return false
+        }
+        let num = String(x)
+//        for index, value := num.characters {
+//            
 //        }
-//        var num = String(x)
-//        var count = num.characters.count
-//        for i in num.characters {
-//            print(i)
+        
+        
+//        let count = num.characters.count
+//        for (index, value) in num.characters.enumerated() {
+//            if index > count/2 {
+//                break
+//            }
+//            if num.index(before: <#T##String.Index#>) {
+//                return true
+//            }
 //        }
-//        
-//        return false
-//    }
+        
+        return false
+    }
 }
 
 Solution().reverse(-2147447412)
 print(Int32.max)
 
-//Solution().isPalindrome(2147447412)
+Solution().isPalindrome(121)
 
 
 
