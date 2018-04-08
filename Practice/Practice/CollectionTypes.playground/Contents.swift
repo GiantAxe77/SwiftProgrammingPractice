@@ -62,5 +62,30 @@ oddDigits.subtracting(singleDigitPrimeNumbers)
 oddDigits.symmetricDifference(singleDigitPrimeNumbers)
 
 
+var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+airports.updateValue("NEW", forKey: "dub")
+if let eee = airports.updateValue("SSS", forKey: "DUB") {
+    print("\(eee)")
+}
+print(airports)
+
+
+if let airportName = airports["DUB"] {
+    print("The name of the airport is \(airportName)")
+}
+
+if let removeValue = airports.removeValue(forKey: "DUB") {
+    print(removeValue)
+}
+print("updated dic:\(airports)")
+
+
+for code in airports.keys {
+    print(code)
+}
+for name in airports.values {
+    print(name)
+}
+
 
 
