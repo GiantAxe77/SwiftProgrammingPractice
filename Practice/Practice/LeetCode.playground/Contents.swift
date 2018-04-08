@@ -109,30 +109,30 @@ class Solution {
         return result * isBelowZero
     }
     
-    
+
     
     // leetcode 9
     func isPalindrome(_ x: Int) -> Bool {
-        if x < 0 {
+        guard x >= 0 else {
             return false
         }
-        let num = String(x)
-//        for index, value := num.characters {
-//            
-//        }
         
+        var divider = 1
+        while divider * 10 <= x { // 找出最大的除数,和x位数相同
+            divider *= 10
+        }
         
-//        let count = num.characters.count
-//        for (index, value) in num.characters.enumerated() {
-//            if index > count/2 {
-//                break
-//            }
-//            if num.index(before: <#T##String.Index#>) {
-//                return true
-//            }
-//        }
+        var target = x
+        while divider >= 10 {
+            if target / divider != target % 10 { // 比较最高位和最低位是否相同
+                return false
+            }
+            
+            target = (target % divider) / 10 // 去掉最高位和最低位剩下的数
+            divider = divider / 100 // 除数减少两个0(最高位和最低位)
+        }
         
-        return false
+        return true
     }
 }
 
@@ -140,7 +140,5 @@ Solution().reverse(-2147447412)
 print(Int32.max)
 
 Solution().isPalindrome(121)
-
-
 
 
