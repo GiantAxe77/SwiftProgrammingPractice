@@ -32,6 +32,7 @@
 		E77511792074D560000C22DB /* BasicOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BasicOperators.playground; sourceTree = "<group>"; };
 		E7758A972073634700CA6958 /* LeetCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LeetCode.playground; sourceTree = "<group>"; };
 		E7B709892079C2FB004C0DE2 /* StringsAndCharacters.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StringsAndCharacters.playground; sourceTree = "<group>"; };
+		E7B7098A207A0464004C0DE2 /* CollectionTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionTypes.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 				E7749844207235D9005BB674 /* BasicPart.playground */,
 				E77511792074D560000C22DB /* BasicOperators.playground */,
 				E7B709892079C2FB004C0DE2 /* StringsAndCharacters.playground */,
+				E7B7098A207A0464004C0DE2 /* CollectionTypes.playground */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
