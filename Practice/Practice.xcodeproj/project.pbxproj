@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		550010C7207E4D3A00BBFFFB /* Functions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Functions.playground; sourceTree = "<group>"; };
 		55519F7B207A51BD00423F0B /* ControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ControlFlow.playground; sourceTree = "<group>"; };
+		55FA21DF2084F3A50065E83F /* Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closures.playground; sourceTree = "<group>"; };
 		E72EFE5C206DCBC200A34EDA /* EnumAndStruct.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EnumAndStruct.playground; sourceTree = "<group>"; };
 		E7300870206CC59400D3E322 /* Class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Class.playground; sourceTree = "<group>"; };
 		E771C424206C9B5600EA35DA /* Practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Practice; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				E771C427206C9B5600EA35DA /* main.swift */,
+				55FA21DF2084F3A50065E83F /* Closures.playground */,
 				550010C7207E4D3A00BBFFFB /* Functions.playground */,
 				E7758A972073634700CA6958 /* LeetCode.playground */,
 				E771C42E206C9B7300EA35DA /* MyPlayground.playground */,

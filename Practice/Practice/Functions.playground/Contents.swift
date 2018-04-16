@@ -130,4 +130,19 @@ while currentValue != 0 {
 print("zero!!!")
 
 
-
+func chooseStepFunction2(backward:Bool) -> (Int) -> Int {
+    func stepForward(input: Int) -> Int {
+        return input + 1
+    }
+    func stepBackward(input: Int) -> Int {
+        return input - 1
+    }
+    return backward ? stepBackward : stepForward
+}
+var value = -4
+let moveNearerToZero2 = chooseStepFunction2(backward: value > 0)
+while value != 0 {
+    print("\(value)...")
+    value = moveNearerToZero2(value)
+}
+print("zero!")
