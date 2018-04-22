@@ -98,9 +98,9 @@ class SomeClass {
         someFunctionWithEscapingClosure {
             self.x = 100
         }
-        someFunctionWithNonescapingClosure {
-            x = 200
-        }
+//        someFunctionWithNonescapingClosure {
+//            x = 200
+//        }
     }
 }
 let instance = SomeClass()
@@ -125,5 +125,27 @@ func serve(customer customerProvider1: () -> String) {
 print("before:\(customersInLine.count)")
 serve(customer: {customersInLine.remove(at: 0)})
 print("after:\(customersInLine.count)")
+
+
+// @autoclosure:自动闭包
+func serve1(customer customerProvider: @autoclosure () -> String) {
+    print("Now serving \(customerProvider())!")
+}
+serve1(customer: customersInLine.remove(at: 0))
+
+
+// 自动闭包逃逸
+var arr = ["a", "b", "c", "d", "e"]
+var customerProviders: [() -> String] = []
+func cs(_ customerProvider: @autoclosure @escaping () -> String) {
+    customerProviders.append(customerProvider)
+}
+cs(arr.remove(at: 0))
+cs(arr.remove(at: 0))
+print("Collected \(customerProviders.count) closures.")
+for c in customerProviders {
+     print("Now serving \(c())!")
+}
+
 
 
